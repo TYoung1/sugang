@@ -17,4 +17,9 @@ public class LectureService {
         return lecture;
     }
 
+    public List<Lecture> lectureByCategory(List<Integer> category){
+        List<Lecture> lecture = lectureRepository.findLecturesByCategoryId(category);
+        return lecture;
+    }
+
 }
